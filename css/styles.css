@@ -37,4 +37,13 @@ body{
 }
 input:radio { 
     width: auto;
- };
+ }
+ .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-link:active {
+    background-color: rgb(170, 150, 218);
+}
