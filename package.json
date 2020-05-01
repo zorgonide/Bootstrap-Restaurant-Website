@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.12.9"
+    
   }
 }
