@@ -29,7 +29,8 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul> 
                     <span class="navbar-text ">
-                        <a class= "nav-link" data-toggle="modal" data-target="#loginModal" href="#">
+                        <!-- <a class= "nav-link" data-toggle="modal" data-target="#loginModal" href="#"> -->
+                        <a class= "nav-link" id="loginButton" href="#">
                         <span class="fa fa-sign-in"></span> Login</a>
                     </span>           
                 </div>        
@@ -175,7 +176,8 @@
                         data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
                         data-placement="bottom" href="#reserveform">Reserve Table</a> -->
                         <!-- <a role="button" class= "btn btn-block btn btn-warning" data-toggle="modal" data-target="#ReservationModal" href="#"> -->
-                        <a role="button" class="btn btn-block btn btn-warning" data-toggle="modal" data-target="#ReservationModal" href="#"><i class="fa fa-anchor"></i> Reserve Table</a>
+                        <!-- <a role="button" class="btn btn-block btn btn-warning" data-toggle="modal" data-target="#ReservationModal" href="#"><i class="fa fa-anchor"></i> Reserve Table</a> -->
+                        <a role="button" id="reservationButton" class="btn btn-block btn btn-warning" href="#"><i class="fa fa-anchor"></i> Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -242,10 +244,10 @@
             
             <div class="d-block d-sm-none">
                 <div class="row row-content align-items-center">
-                    <div class="col-sm-4 col-md-3 order-2">  
-                        <h3>Our Lipsmacking Culinary Creations</h3>
+                    <div class="col-sm-4 col-md-3 order-1">  
+                        <h3 class="heading">Our Lipsmacking Culinary Creations</h3>
                     </div>
-                    <div class="col-sm col-md order-1">
+                    <div class="col-sm col-md order-2">
                     <div class="media">
                             <img class="d-flex mr-3 img-thumbnail align-self-center"
                                 src="img/uthappizza.png" alt="Uthappizza">
@@ -262,7 +264,7 @@
 
                 <div class="row row-content align-items-center">
                     <div class="col-sm-4 col-md-3">
-                        <h3>This Month's Promotions</h3>
+                        <h3 class="heading">This Month's Promotions</h3>
                     </div>
                     <div class="col-sm col-md">
                         <div class="media">
@@ -280,10 +282,10 @@
                 </div>
 
                 <div class="row row-content align-items-center">
-                    <div class="col-sm-4 col-md-3 order-2">
-                        <h3>Meet our Culinary Specialists</h3>
+                    <div class="col-sm-4 col-md-3 order-1">
+                        <h3 class="heading">Meet our Culinary Specialists</h3>
                     </div>
-                    <div class="col-sm col-md order-1">
+                    <div class="col-sm col-md order-2">
                         <div class="media">
                             <img class="d-flex mr-3 img-thumbnail align-self-center"
                                 src="img/alberto.png" alt="Alberto Somayya">
@@ -417,6 +419,13 @@
                         $("#carousel-button").children("span").removeClass('fa-play');
                         $("#carousel-button").children("span").addClass('fa-pause');                    
                     }
+                });
+                $("#loginButton").click(function(){
+                    $("#loginModal").modal('show');
+                });
+                
+                $("#reservationButton").click(function(){
+                    $("#ReservationModal").modal('show');
                 });
         });
         </script>
