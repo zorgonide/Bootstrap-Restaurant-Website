@@ -63,15 +63,18 @@ body{
             min-height: 300px;
         }
     }
+    .carousel-caption {
+        bottom: 20%;
+        left: 30%;
+    }
 }
 
-#carouselButton {
+#carousel-button {
     right:0px;
     position: absolute;
     bottom: 0px;
     z-index: 1;
 }
-
 .modal {    
     
     .modal-header {
